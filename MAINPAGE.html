@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="omoo.png">
+    
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/dfedbc289c.js" crossorigin="anonymous"></script>
+    <title>Social Media</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="search for friends, creators and contents">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+            </div>
+            <div class="chat">
+                   <a href="TYPING.html"><button id="chat"><i class="fa-solid fa-message fa-2xl"></i></button></a>
+                </div>
+        </div>
+    </nav>
+
+    <!---------------------MAIN---------------------->
+    <main>
+        <div class="container">
+            <!---------------------LEFT--------------------------->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo" id="profile-top-left">
+                        <img src="woman-profile2.jpg" alt="">
+                    </div>
+                    <div class="handle">
+                        <h4>Diana Ayi</h4>
+                        <p class="text-muted">
+                            @dayl
+                        </p>
+                    </div>
+                </a>
+                <!---------------------SIDEBAR------------------------>
+                <div class="sidebar">
+                    <a href="" class="menu-item active">
+                        <span><i class="fa-solid fa-house"></i><h3>Home</h3></span>
+                    </a>
+                    <a href="" class="menu-item">
+                        <span><i class="fa-solid fa-compass"></i><h3>Explore</h3></span>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                    
+                    <span><i class="fa-solid fa-bell"><small class="notification-count">9+</small></i><h3>Notifications</h3></span>
+                        <!--NOTIFICATIONs POPUP-->
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="Male3.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Keke Benjamin</b> sent you a friend request
+                                    <small class="text-muted">12 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="Male.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Bright Sunday</b> tagged you and 10 others in a post
+                                    <small class="text-muted">1 DAY AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="Female.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Tolani Baj</b> requested to join your private room
+                                    <small class="text-muted">1 DAY AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="female2.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Chigozie Chiamaka</b> sent you a friend request
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="Female3.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Elon Blessing</b> commented on your post
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="Male2.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>John Paul</b> liked a comment on the "make it big" group
+                                    <small class="text-muted">3 DAYS AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!----------------------------NOTIFICATION POPUP-------------------------------->
+                    </a>
+
+                    <a href="#profile-m" class="menu-item" id="messages-notifications">
+                        <span><i class="fa-solid fa-message"><small class="notification-count">6</small></i><h3>Messages</h3></span>
+                    </a>
+                    <a  class="menu-item">
+                        <span><i class="fa-solid fa-bookmark"></i><h3>Bookmarks</h3></span>
+                    </a>
+                    <a href="" class="menu-item">
+                        <span><i class="fa-solid fa-chart-line"></i><h3>Analytics</h3></span>
+                    </a>
+                    <a href="" class="menu-item">
+                        <span><i class="fa-solid fa-brands fa-themeisle"></i><h3>Theme</h3></span>
+                    </a>
+                    <a href="" class="menu-item">
+                        <span><i class="fa-solid fa-gear"></i><h3>Settings</h3></span>
+                    </a>
+                </div>
+                <!---------------------END OF SIDEBAR------------------>
+                    <label for="create-post" class="btn btn-primary">Create Post</label>
+            </div>
+            <!----------------------END OF LEFT------------------------->
+            <!--------------------MIDDLE------------------------------->
+            <div class="middle">
+            <!-------------------------STORIES-------------------------------->
+                <div class="stories" id="your-story">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="woman-profile2.jpg" alt="">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo-story">
+                            <img src="woman-570883_640.jpg" alt="">
+                        </div>
+                        <p class="name">Jenifer Moore</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="Male.jpg" alt="">
+                        </div>
+                        <p class="name">Beauty Veronica</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo-story">
+                            <img src="woman-profile.jpg" alt="">
+                        </div>
+                        <p class="name">Alan Parker</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="park-5926805_1920.jpg" alt="">
+                        </div>
+                        <p class="name">Eunice Richard</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="female2.jpg" alt="">
+                        </div>
+                        <p class="name">Kemisola Badmus</p>
+                    </div>
+                </div>
+                <!---------END OF STORIES---------->
+                <form class="create-post">
+                    <div class="profile-photo" id="profile-post-middle">
+                        <img src="woman-profile2.jpg" alt="" >
+                    </div>
+                    <input type="text" placeholder="what's on your mind Diana?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+                <!-------------POSTS----------------->
+                <div class="posts-container">
+                    <div class="post-con">
+                        <div class="post">
+                        <div class="profile-photo-posts">
+                            <img src="girl-g3fce82961_640.jpg" alt="">
+                        </div>
+                        <div class="post-info">
+                            <p>Folarin Bayo</p>
+                            <small>Lagos, Nigeria, 12MINUTES AGO</small>
+                        </div>
+                        <div class="option-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="img-post">
+                            <img src="free-handsome-boy-blazer-images-7709054_1280.jpg" alt="" id="img-post">
+                        </div>
+                        <div class="icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="likes">
+                            <div class="comment-photo">
+                                <img src="girl-1716824_1920.jpg" alt="">
+                                <img src="girl-2175313_1280.jpg" alt="">
+                                <img src="free-handsome-boy-blazer-images-7709054_1280.jpg" alt="">
+                            </div>
+                            <p>Liked by <b>Kunta</b> and <b>900 others likes post</b> peng! #"tripple fashion"</p>
+                            <p>View all 380 comments</p>
+                        </div>
+                    </div>
+
+                    <div class="post-con">
+                        <div class="post">
+                        <div class="profile-photo-posts">
+                            <img src="woman-570883_640.jpg" alt="">
+                        </div>
+                        <div class="post-info">
+                            <p>Caro Lyn</p>
+                            <small>Abuja, Nigeria 10MINUTES AGO</small>
+                        </div>
+                        <div class="option-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="img-post">
+                            <img src="Female.jpg" alt="" id="img-post">
+                        </div>
+                        <div class="icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="likes">
+                            <div class="comment-photo">
+                                <img src="girl-1716824_1920.jpg" alt="">
+                                <img src="girl-2175313_1280.jpg" alt="">
+                                <img src="free-handsome-boy-blazer-images-7709054_1280.jpg" alt="">
+                            </div>
+                            <p>Liked by <b>Bayo</b> and <b>400 others likes post</b> abundantly blessed, TGIF #"villa"</p>
+                            <p>View all 40 comments</p>
+                        </div>
+                    </div>
+
+                    <div class="post-con">
+                        <div class="post">
+                        <div class="profile-photo-posts">
+                            <img src="Male2.jpg" alt="">
+                        </div>
+                        <div class="post-info">
+                            <p>Kalistus Bill</p>
+                            <small>Armsterdan, 10MINUTES AGO</small>
+                        </div>
+                        <div class="option-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="img-post">
+                            <img src="drink-84533_640.jpg" alt="" id="img-post">
+                        </div>
+                        <div class="icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="likes">
+                            <div class="comment-photo">
+                                <img src="girl-1716824_1920.jpg" alt="">
+                                <img src="girl-2175313_1280.jpg" alt="">
+                                <img src="free-handsome-boy-blazer-images-7709054_1280.jpg" alt="">
+                            </div>
+                            <p>Liked by <b>Enerst Achiever</b> and <b>300 other likes post</b> sip #"beach"</p>
+                            <p>View all 120 comments</p>
+                        </div>
+                    </div>
+
+                    <div class="post-con">
+                        <div class="post">
+                        <div class="profile-photo-posts">
+                            <img src="men-gd26fd7178_640.jpg" alt="">
+                        </div>
+                        <div class="post-info">
+                            <p>Jenife Moore</p>
+                            <small>Nairobi, Kenya 10MINUTES AGO</small>
+                        </div>
+                        <div class="option-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="img-post">
+                            <img src="girl-1879095_640.jpg" alt="" id="img-post">
+                        </div>
+                        <div class="icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="likes">
+                            <div class="comment-photo">
+                                <img src="girl-1716824_1920.jpg" alt="">
+                                <img src="girl-2175313_1280.jpg" alt="">
+                                <img src="free-handsome-boy-blazer-images-7709054_1280.jpg" alt="">
+                            </div>
+                            <p>Liked by <b>Kylan White</b> and <b>200 others likes post</b> Sister from another ma! #Lea"</p>
+                            <p>View all 30 comments</p>
+                        </div>
+                    </div>
+
+                    <div class="post-con">
+                        <div class="post">
+                        <div class="profile-photo-posts">
+                            <img src="girl-2696947_640.jpg" alt="">
+                        </div>
+                        <div class="post-info">
+                            <p>Alan Parker</p>
+                            <small>North Carolina, 50MINUTES AGO</small>
+                        </div>
+                        <div class="option-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="img-post">
+                            <img src="food-1898194_1920.jpg" alt="" id="img-post">
+                        </div>
+                        <div class="icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="likes">
+                            <div class="comment-photo">
+                                <img src="girl-1716824_1920.jpg" alt="">
+                                <img src="girl-2175313_1280.jpg" alt="">
+                                <img src="free-handsome-boy-blazer-images-7709054_1280.jpg" alt="">
+                            </div>
+                            <p>Liked by <b>D'Law</b> and <b>800 others likes post</b> Yummy yummy.. #"bulls resturant"</p>
+                            <p>View all 100 comments</p>
+                        </div>
+                    </div>
+
+                    <div class="post-con">
+                        <div class="post">
+                        <div class="profile-photo">
+                            <img src="man-head-1234492_640.png" alt="">
+                        </div>
+                        <div class="post-info">
+                            <p>John Paul</p>
+                            <small>Argentina, 12MINUTES AGO</small>
+                        </div>
+                        <div class="option-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="img-post">
+                            <img src="abs-1850926_640.jpg" alt="" id="img-post">
+                        </div>
+                        <div class="icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="likes">
+                            <div class="comment-photo">
+                                <img src="girl-1716824_1920.jpg" alt="">
+                                <img src="girl-2175313_1280.jpg" alt="">
+                                <img src="free-handsome-boy-blazer-images-7709054_1280.jpg" alt="">
+                            </div>
+                            <p>Liked by <b>Chris Luke</b> and <b>30 others likes post </b> fit! #"gym gym"</p>
+                            <p>View all 4 comments</p>
+                        </div>
+                    </div>
+
+                    <div class="post-con">
+                        <div class="post">
+                        <div class="profile-photo-posts">
+                            <img src="cinereous-vulture-gb2ee6e918_1920.jpg" alt="">
+                        </div>
+                        <div class="post-info">
+                            <p>Animal Planet</p>
+                            <small>Argentina, 12MINUTES AGO</small>
+                        </div>
+                        <div class="option-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="img-post">
+                            <img src="deer-gf04ba9aa2_1920.jpg" alt="" id="img-post">
+                        </div>
+                        <div class="icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="likes">
+                            <div class="comment-photo">
+                                <img src="girl-1716824_1920.jpg" alt="">
+                                <img src="girl-2175313_1280.jpg" alt="">
+                                <img src="free-handsome-boy-blazer-images-7709054_1280.jpg" alt="">
+                            </div>
+                            <p>Liked by <b>Natgeo Wild</b> and <b>222,323 others likes post</b> incredible! #"photo world"</p>
+                            <p>View all 3,180 comments</p>
+                        </div>
+                    </div>
+
+                    <div class="post-con">
+                        <div class="post">
+                        <div class="profile-photo-posts">
+                            <img src="artist-3480274_640.jpg" alt="">
+                        </div>
+                        <div class="post-info">
+                            <p>John Paul</p>
+                            <small>Argentina, 12MINUTES AGO</small>
+                        </div>
+                        <div class="option-icon"><i class="fa-solid fa-ellipsis"></i></div>
+                        </div>
+                        <div class="img-post">
+                            <img src="lonely-g10de07f78_1920.jpg" alt="" id="img-post">
+                        </div>
+                        <div class="icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div class="likes">
+                            <div class="comment-photo">
+                                <img src="girl-1716824_1920.jpg" alt="">
+                                <img src="girl-2175313_1280.jpg" alt="">
+                                <img src="free-handsome-boy-blazer-images-7709054_1280.jpg" alt="">
+                            </div>
+                            <p>Liked by <b>Billy Bruce</b> and <b>20 others likes post</b> lonely #"****"</p>
+                            <p>View all 50 comments</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <!-------------END OF MIDDLE---------------->
+            <div class="right">
+            <!-----------------RIGHT-------------------->
+                <div class="message-container" id="message-container">
+                    <div class="profile-m" id="profile-m">
+                     <div class="messages-icon-right">
+                         <h4>Messages</h4>
+                         <i class="fa-regular fa-pen-to-square fa-large"></i>
+                     </div>
+                     <div class="search-bar-right" id="search-bar-right">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="search messages">
+                     </div>
+                     <div class="message-links">
+                        <a href="#recent"><span>Recent</span></a>
+                        <a href="TYPING.html"><span>Chat box</span></a>
+                        <a href="#requests"><span><b>Requests(6)</b></span></a>
+                     </div>
+                     <div id="recent">
+                     <div class="profile-messages">
+                        <div class="profile-photo-right">
+                        <img src="abs-1850926_640.jpg" alt="">
+                        <i class="fa-solid fa-circle" style="color: green;"></i>
+                        </div>
+                        <div class="p-small">
+                        <p><b>John Paul</b></p>
+                        <small>Hello bro.</small>
+                        </div>
+                    </div>
+
+                    <div class="profile-messages">
+                        <div class="profile-photo-right">
+                        <img src="people-913778_1280.jpg" alt="">
+                        <i class="fa-solid fa-circle" style="color: green;"></i>
+                        </div>
+                        <div class="p-small">
+                        <p><b>Chris Chuks</b></p>
+                        <small>Let's catch up later in the day.</small>
+                        </div>
+                    </div>
+
+                    <div class="profile-messages">
+                        <div class="profile-photo-right">
+                        <img src="woman-profile.jpg" alt="">
+                        <i class="fa-solid fa-circle" style="color: green;"></i>
+                        </div>
+                        <div class="p-small">
+                        <p><b>Princess Moremi</b></p>
+                        <small>I love you</small>
+                        </div>
+                    </div>
+
+                    <div class="profile-messages">
+                        <div class="profile-photo-right">
+                        <img src="woman-332278_640.jpg" alt="">
+                        <i class="fa-solid fa-circle" style="color: green;"></i>
+                        </div>
+                        <div class="p-small">
+                        <p><b>Ibrahim Rashid</b></p>
+                        <small>How are you?</small>
+                        </div>
+                    </div>
+
+                    <div class="profile-messages">
+                        <div class="profile-photo-right">
+                        <img src="Male3.jpg" alt="">
+                        <i class="fa-solid fa-circle" style="color: green;"></i>
+                        </div>
+                        <div class="p-small">
+                        <p><b>Jude</b></p>
+                        <small>When are you coming?</small>
+                        </div>
+                    </div>
+
+                    <div class="profile-messages">
+                        <div class="profile-photo-right">
+                        <img src="child-2615839_640.jpg" alt="">
+                        <i class="fa-solid fa-circle" style="color: green;"></i>
+                        </div>
+                        <div class="p-small">
+                        <p><b>Silver</b></p>
+                        <small>Is the event still holding?</small>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+                <!----------------REQUEST SECTION----------------------->
+                    <div class="request-height" id="requests">
+                        <h4>Requests</h4>
+                        <div class="request-container">
+                            <div class="profile-photo-right" id="profile-request">
+                            <img src="woman-570883_640.jpg" alt="">
+                            <p><b>Veronica Campbell</b></p>     
+                            </div>
+                            <div class="small">
+                            <small>12 mutual friends.</small>
+                            </div>
+                            <div class="button-request">
+                            <button>confirm</button>
+                            <button>delete</button>
+                            </div>
+                        </div>
+
+                        <div class="request-container">
+                            <div class="profile-photo-right" id="profile-request">
+                            <img src="horse-race-4018609_640.jpg" alt="">
+                            <p><b>Bam Bam</b></p>     
+                            </div>
+                            <div class="small">
+                            <small>6 mutual friend.</small>
+                            </div>
+                            <div class="button-request">
+                            <button>confirm</button>
+                            <button>delete</button>
+                            </div>
+                        </div>
+
+                        <div class="request-container">
+                            <div class="profile-photo-right" id="profile-request">
+                            <img src="Female3.jpg" alt="">
+                            <p><b>Young Master</b></p>     
+                            </div>
+                            <div class="small">
+                            <small>1 mutual friends.</small>
+                            </div>
+                            <div class="button-request">
+                            <button>confirm</button>
+                            <button>delete</button>
+                            </div>
+                        </div>
+
+                        <div class="request-container">
+                            <div class="profile-photo-right" id="profile-request">
+                            <img src="girl-1716824_1920.jpg" alt="">
+                            <p><b>Becky Suzzy</b></p>     
+                            </div>
+                            <div class="small">
+                            <small>2 mutual friends.</small>
+                            </div>
+                            <div class="button-request">
+                            <button>confirm</button>
+                            <button>delete</button>
+                            </div>
+                        </div>
+
+                        <div class="request-container">
+                            <div class="profile-photo-right" id="profile-request">
+                            <img src="wait-for-a-call-4935894_1920.jpg" alt="">
+                            <p><b>Noah White</b></p>     
+                            </div>
+                            <div class="small">
+                            <small>18 mutual friends.</small>
+                            </div>
+                            <div class="button-request">
+                            <button>confirm</button>
+                            <button>delete</button>
+                            </div>
+                        </div>
+
+                        <div class="request-container">
+                            <div class="profile-photo-right" id="profile-request">
+                            <img src="girl-2175313_1280.jpg" alt="">
+                            <p><b>Baby Pwesh</b></p>     
+                            </div>
+                            <div class="small">
+                            <small>108 mutual friends.</small>
+                            </div>
+                            <div class="button-request">
+                            <button>confirm</button>
+                            <button>delete</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <script src="social.js"></script>
+</body>
+</html>

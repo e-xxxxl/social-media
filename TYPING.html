@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>messager</title>
+  
+  <link rel="stylesheet" href="chatapp.css">
+  <script src="https://kit.fontawesome.com/0e65212c86.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- the message page -->
+    
+  <!-- all chats are listed here -->
+  <div class="broadcastlist">
+    
+   <div class="icons"> 
+    <h2>Chats</h2>
+   <div class="fonticons">
+    <i class="fa-solid fa-message"></i>
+    <i class="fa-solid fa-user-plus"></i>
+    <i class="fa-solid fa-xmark"></i></div>
+   </div>
+   <div class="header">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="text" placeholder="search or start a new chat">
+   </div>
+   <div class="chats">
+    <div class="contacts">
+      <div class="image"><img src="abi.jpg" alt=""></div>
+     <div class="user">
+      <div class="pii">
+        <h4>Abigail</h4>
+      <p class="time">10pm</p>
+      </div>
+      <div class="message">
+        <p>hope you are catching up well.</p>
+      </div>
+     </div>
+   </div>
+   <div class="unread-contacts">
+    <div class="image"><img src="bakker-120.jpg" alt=""></div>
+   <div class="user">
+    <div class="pii">
+      <h4>zuzu</h4>
+    <p class="time">9pm</p>
+    </div>
+    <div class="unread-message">
+      <p>bruh! i dey broke lidis. send cash abeg</p>
+      <b>1</b>
+    </div>
+   </div>
+   </div>
+  
+   <div class="unread-contacts" >
+    <div class="image"><img src="abigail.jpg" alt=""></div>
+   <div class="user">
+    <div class="pii">
+      <h4>ada <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"></i></h4>
+    <p class="time">2am</p>
+    </div>
+    <div class="unread-message">
+      <p>hello dear i need some money.</p>
+      <b>5</b>
+    </div>
+   </div>
+   </div>
+   <div class="unread-contacts">
+    <div class="image"><img src="pic1.jpg" alt=""></div>
+   <div class="user">
+    <div class="pii">
+      <h4>frn</h4>
+    <p class="time">yesterday</p>
+    </div>
+    <div class="unread-message">
+      <p>lend me some money.</p>
+      
+    </div>
+   </div>
+   </div>
+   <div class="unread-contacts">
+    <div class="image"><img src="abigail.jpg" alt=""></div>
+   <div class="user">
+    <div class="pii">
+      <h4>Abigail</h4>
+    <p class="time">9pm</p>
+    </div>
+    <div class="unread-message">
+      <p>hope you are catching up well.</p>
+      <b>1</b>
+    </div>
+   </div>
+   </div>
+   <div class="unread-contacts">
+    <div class="image"><img src="abigail.jpg" alt=""></div>
+   <div class="user">
+    <div class="pii">
+      <h4>Abigail</h4>
+    <p class="time">9pm</p>
+    </div>
+    <div class="unread-message">
+      <p>hope you are catching up well.</p>
+      <b>1</b>
+    </div>
+   </div>
+   </div>
+   <div class="unread-contacts">
+    <div class="image"><img src="abigail.jpg" alt=""></div>
+   <div class="user">
+    <div class="pii">
+      <h4>Abigail</h4>
+    <p class="time">9pm</p>
+    </div>
+    <div class="unread-message">
+      <p>hope you are catching up well.</p>
+      <b>1</b>
+    </div>
+   </div>
+   </div>
+   <div class="unread-contacts">
+    <div class="image"><img src="abigail.jpg" alt=""></div>
+   <div class="user">
+    <div class="pii">
+      <h4>Abigail</h4>
+    <p class="time">9pm</p>
+    </div>
+    <div class="unread-message">
+      <p>hope you are catching up well.</p>
+      <b>1</b>
+    </div>
+   </div>
+   </div>
+  </div>
+  <!-- where there's interactive chat session -->
+ </div>
+ <div class="mainpage" id="mainpage">
+      <div class="navbar">
+        <div class="image"><img src="abigail.jpg" alt="">
+        </div>
+        <div class="pi">
+          <h4>Abigail</h4>
+          <p>online.</p>
+        </div>
+      </div>
+      
+          <div class="content">
+              <div class="full-chat-block">
+                  <!-- Message Container -->
+                  <div class="outer-container">
+                      <div class="chat-container">
+                          <!-- Messages -->
+                          <div id="chatbox">
+                              <h5 id="chat-timestamp"></h5>
+                              <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                          </div>
+  
+                          <!-- User input box -->
+                          <div class="chat-bar-input-block">
+                              <div id="userInput">
+                                  <input id="textInput" class="input-box" type="text" name="msg"
+                                      placeholder="type to send a message">
+                                  <p></p>
+                              </div>
+  
+                              <div class="chat-bar-icons">
+                                  <i id="chat-icon" style="color:#333 ;"  class="fa-solid fa-microphone"
+                                      onclick="heartButton()"></i>
+                                  <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                      onclick="sendButton()"></i>
+                              </div>
+                          </div>
+  
+                          <div id="chat-bar-bottom">
+                              <p></p>
+                          </div>
+  
+                      </div>
+                  </div>
+  
+              </div>
+          </div>
+      </div>
+     
+  </div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="chatapp.js"></script> 
+<script src="respon.js"></script>
+</html>
